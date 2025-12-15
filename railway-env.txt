@@ -1,0 +1,9 @@
+HOST=0.0.0.0
+PORT=$PORT
+NODE_ENV=production
+DATABASE_URL=${{Postgres.DATABASE_URL}}
+APP_KEYS=your-random-key-1,your-random-key-2
+API_TOKEN_SALT=your-random-salt-1
+ADMIN_JWT_SECRET=your-random-secret-1
+TRANSFER_TOKEN_SALT=your-random-salt-2
+JWT_SECRET=your-random-secret-2
