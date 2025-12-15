@@ -1,0 +1,66 @@
+.jokes-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.page-header {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.app-title {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+
+.jokes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.jokes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.loading, .error, .no-jokes {
+  text-align: center;
+  padding: 40px;
+  color: white;
+  font-size: 1.2em;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.error {
+  background: rgba(255, 107, 107, 0.2);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+}
+
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 2.5em;
+  }
+  
+  .jokes-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .page-header {
+    padding: 30px 15px;
+  }
+  
+  .jokes-container {
+    padding: 30px 15px;
+  }
+}
